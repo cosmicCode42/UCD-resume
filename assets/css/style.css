@@ -182,6 +182,12 @@ header {
     padding: 0;
 }
 
+/* -----------------------------------Div map */
+
+div#map {
+    min-height: 360px;
+}
+
 /* -----------------------------------Hover.css */
 
 .hvr-bounce-to-right::before, .hvr-bounce-to-left::before, .hvr-sweep-to-bottom::before {
