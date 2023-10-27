@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("-u4d8rnqsIS7MjCKm");
+            emailjs.send("service_ba1f2hx","template_sqz6xq9");
+        })();
+    </script>
+
     <title>Contacts</title>
 </head>
 
@@ -34,7 +44,8 @@
                         <ul id="nav" class="list-inline menucontainer row">
                             <li class="col-xs-6 col-sm-2 ui-menu-color-home menuitem">
                                 <!-- Supposed to use 'hvr-sweep-to-bottom' here, but experimenting. The 'hvr' is what creates that neat bounce effect when the links are hovered over. -->
-                                <a href="index.html" class="hvr-bounce-to-right"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span></a>
+                                <a href="index.html" class="hvr-bounce-to-right"><i class="fas fa-home"
+                                        aria-hidden="true"></i><span>Home</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-resume menuitem">
                                 <a href="resume.html" class="hvr-bounce-to-right"><i class="fas fa-graduation-cap"
@@ -45,13 +56,17 @@
                                         aria-hidden="true"></i><span>Contact</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-interests menuitem">
-                                <a href="interests.html" class="hvr-bounce-to-right"><i class="fa fa-users" aria-hidden="true"></i><span>Interests</span></a>
+                                <a href="interests.html" class="hvr-bounce-to-right"><i class="fa fa-users"
+                                        aria-hidden="true"></i><span>Interests</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-github menuitem">
-                                <a href="github.html" class="hvr-bounce-to-right"><i class="fab fa-github" aria-hidden="true"></i><span>GitHub</span></a>
+                                <a href="github.html" class="hvr-bounce-to-right"><i class="fab fa-github"
+                                        aria-hidden="true"></i><span>GitHub</span></a>
                             </li>
                             <li class="col-xs-6 col-sm-2 ui-menu-color-download menuitem">
-                                <a href="https://docs.google.com/document/d/19kCRfhNLiz89dm2hheAeIyKcyTcMQMqckiDeV2FpN9U/edit?usp=sharing" target="_blank" class="cv-pdf hvr-bounce-to-right"><i class="fas fa-download" aria-hidden="true"></i><span>Download</span></a>
+                                <a href="https://docs.google.com/document/d/19kCRfhNLiz89dm2hheAeIyKcyTcMQMqckiDeV2FpN9U/edit?usp=sharing"
+                                    target="_blank" class="cv-pdf hvr-bounce-to-right"><i class="fas fa-download"
+                                        aria-hidden="true"></i><span>Download</span></a>
                             </li>
                         </ul>
                     </div>
@@ -69,7 +84,8 @@
                     <form action="" method="post">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
                         <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                        <textarea name="projectsummary" id="projectsummary" cols="30" rows="5" class="form-control" placeholder="Project description" required></textarea>
+                        <textarea name="projectsummary" id="projectsummary" cols="30" rows="5" class="form-control"
+                            placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
                                 <button type="submit" class="btn btn-secondary">Send Project Request</button>
@@ -90,7 +106,8 @@
                 <h5 class="uppercase general-sub">Download</h5>
                 <p class="inline-block">
                     Here's a printable version of my CV.
-                    <a href="https://docs.google.com/document/d/19kCRfhNLiz89dm2hheAeIyKcyTcMQMqckiDeV2FpN9U/edit?usp=sharing" target="_blank" class="cv-pdf">
+                    <a href="https://docs.google.com/document/d/19kCRfhNLiz89dm2hheAeIyKcyTcMQMqckiDeV2FpN9U/edit?usp=sharing"
+                        target="_blank" class="cv-pdf">
                         <i class="fas fa-download" aria-hidden="true"></i>
                         <span class="sr-only">Download link.</span>
                     </a>
@@ -124,3 +141,5 @@
 </body>
 
 </html>
+
+<!-- email template code:  -->
