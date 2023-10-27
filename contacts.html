@@ -18,7 +18,7 @@
     <script type="text/javascript">
         (function () {
             emailjs.init("-u4d8rnqsIS7MjCKm");
-            emailjs.send("service_ba1f2hx","template_sqz6xq9");
+            // email.js here
         })();
     </script>
 
@@ -81,9 +81,9 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form action="" method="post">
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                        <input type="email" name="emailaddress" id="email" class="form-control" placeholder="Email" required>
                         <textarea name="projectsummary" id="projectsummary" cols="30" rows="5" class="form-control"
                             placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
@@ -138,6 +138,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/send-email.js"></script>
 </body>
 
 </html>
